@@ -705,3 +705,105 @@ h3 {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* TEMPORARY PRICE GUIDE */
+
+.price-section {
+  background: #f5faff;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.price-card {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #dceaf4;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(28, 91, 135, 0.06);
+}
+
+.price-card-featured {
+  border: 2px solid #1878bd;
+  box-shadow: 0 12px 30px rgba(24, 120, 189, 0.12);
+}
+
+.price-label {
+  margin-bottom: 14px;
+  color: #1878bd;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.price-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.price-description {
+  min-height: 80px;
+  font-size: 0.93rem;
+}
+
+.price {
+  margin: 12px 0 22px;
+  color: #10578e;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.price span,
+.price small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.quote-price {
+  font-size: 1.8rem;
+}
+
+.price-card .button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.price-disclaimer {
+  max-width: 850px;
+  margin: 28px auto 0;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid #dceaf4;
+  border-radius: 14px;
+  font-size: 0.9rem;
+}
+
+.price-disclaimer strong {
+  color: #183247;
+}
+
+@media (max-width: 950px) {
+  .price-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-description {
+    min-height: 0;
+  }
+}
+
