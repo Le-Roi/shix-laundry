@@ -8,7 +8,7 @@
   <title>Laundry Services in Gacharage | Shix Laundry</title>
   <meta
     name="description"
-    content="Shix Laundry offers laundry, bedding, garment care, carpet and home cleaning in Gacharage along Kiambu–Limuru Road. Contact us for a quotation."
+    content="Shix Laundry offers laundry, bedding, garment care, carpet and home cleaning in Gacharage along Kiambu–Limuru Road. Request a booking or quotation."
   >
 
   <meta name="theme-color" content="#eaf6ff">
@@ -25,16 +25,14 @@
 
     <nav aria-label="Main navigation">
       <a href="#services">Services</a>
+      <a href="#price-guide">Prices</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#hours">Opening Hours</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="button button-primary"
-       href="https://wa.me/254706414015"
-       target="_blank"
-       rel="noopener noreferrer">
-      Contact Us
+    <a class="button button-primary" href="#booking">
+      Book Now
     </a>
   </header>
 
@@ -51,11 +49,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary"
-             href="https://wa.me/254706414015"
-             target="_blank"
-             rel="noopener noreferrer">
-            Request a Service
+          <a class="button button-primary" href="#booking">
+            Book a Service
           </a>
 
           <a class="button button-secondary" href="#services">
@@ -144,8 +139,8 @@
           </p>
         </article>
       </div>
-    </section> 
-    
+    </section>
+
     <!-- TEMPORARY PRICE GUIDE: REVIEW BEFORE LAUNCH -->
     <section class="section price-section" id="price-guide">
       <div class="section-heading">
@@ -153,7 +148,7 @@
         <h2>Simple pricing. Clear choices.</h2>
         <p>
           These prices are temporary estimates for website development.
-          Please contact us to confirm the current price before placing an order.
+          Contact us to confirm the current price before placing an order.
         </p>
       </div>
 
@@ -167,11 +162,8 @@
           <p class="price">
             <span>KES</span> 150 <small>/ kg</small>
           </p>
-          <a class="button button-secondary"
-             href="https://wa.me/254706414015"
-             target="_blank"
-             rel="noopener noreferrer">
-            Ask About This Service
+          <a class="button button-secondary" href="#booking">
+            Request This Service
           </a>
         </article>
 
@@ -184,11 +176,8 @@
           <p class="price">
             <span>KES</span> 200 <small>/ kg</small>
           </p>
-          <a class="button button-primary"
-             href="https://wa.me/254706414015"
-             target="_blank"
-             rel="noopener noreferrer">
-            Ask About This Service
+          <a class="button button-primary" href="#booking">
+            Request This Service
           </a>
         </article>
 
@@ -196,14 +185,11 @@
           <p class="price-label">OTHER SERVICES</p>
           <h3>Personalised Quotation</h3>
           <p class="price-description">
-            Ask us about ironing only, folding only, bedding, special
-            garment care, carpet cleaning or home cleaning.
+            Ask us about ironing, folding, bedding, special garment care,
+            carpet cleaning or home cleaning.
           </p>
           <p class="price quote-price">Contact us</p>
-          <a class="button button-secondary"
-             href="https://wa.me/254706414015"
-             target="_blank"
-             rel="noopener noreferrer">
+          <a class="button button-secondary" href="#booking">
             Request a Quote
           </a>
         </article>
@@ -217,6 +203,7 @@
       </p>
     </section>
     <!-- END TEMPORARY PRICE GUIDE -->
+
     <section class="section process-section" id="how-it-works">
       <div class="section-heading">
         <p class="eyebrow">SIMPLE & CONVENIENT</p>
@@ -227,7 +214,7 @@
         <article>
           <span class="step-number">01</span>
           <h3>Tell us what you need</h3>
-          <p>Contact us by WhatsApp or phone with your service request.</p>
+          <p>Choose your services using our booking request form.</p>
         </article>
 
         <article>
@@ -238,11 +225,183 @@
 
         <article>
           <span class="step-number">03</span>
-          <h3>Let us take it from here</h3>
-          <p>We confirm your arrangements before your service begins.</p>
+          <h3>Receive confirmation</h3>
+          <p>Your service proceeds after the arrangements are confirmed.</p>
         </article>
       </div>
     </section>
+
+    <!-- BOOKING REQUEST FORM -->
+    <section class="section booking-section" id="booking">
+      <div class="section-heading">
+        <p class="eyebrow">BOOKING REQUEST</p>
+        <h2>How can we help you?</h2>
+        <p>
+          Tell us what you need. We will contact you to confirm availability,
+          pricing and the next steps.
+        </p>
+      </div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="form-field">
+          <label for="customer-name">Your full name *</label>
+          <input
+            type="text"
+            id="customer-name"
+            name="customerName"
+            autocomplete="name"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="customer-phone">Phone number *</label>
+          <input
+            type="tel"
+            id="customer-phone"
+            name="customerPhone"
+            autocomplete="tel"
+            placeholder="e.g. 0712 345 678"
+            required
+          >
+        </div>
+
+        <fieldset class="form-field service-choices">
+          <legend>Which services do you need? *</legend>
+
+          <label>
+            <input type="checkbox" name="services" value="Wash, dry and fold">
+            Wash, dry and fold
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Wash, dry, fold and iron">
+            Wash, dry, fold and iron
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Washing only">
+            Washing only
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Ironing only">
+            Ironing only
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Folding only">
+            Folding only
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Bedding and bulky items">
+            Bedding and bulky items
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Special garment care">
+            Special garment care
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Carpet cleaning">
+            Carpet cleaning
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Home cleaning">
+            Home cleaning
+          </label>
+
+          <label>
+            <input type="checkbox" name="services" value="Other service or quotation">
+            Other service / quotation
+          </label>
+
+          <p class="field-help">Select all that apply.</p>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="laundry-size">Laundry quantity or item details</label>
+          <input
+            type="text"
+            id="laundry-size"
+            name="laundrySize"
+            placeholder="e.g. 5 kg, one basket, 2 duvets"
+          >
+          <p class="field-help">Optional. For cleaning services, describe the space or items.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="service-method">How would you like to receive the service? *</label>
+          <select id="service-method" name="serviceMethod" required>
+            <option value="">Choose an option</option>
+            <option value="Drop-off at the premises">Drop off at the premises</option>
+            <option value="Pickup and delivery requested">Request pickup and delivery</option>
+            <option value="Discuss arrangements first">Discuss arrangements first</option>
+          </select>
+        </div>
+
+        <div class="form-field" id="address-field">
+          <label for="customer-address">Location or address</label>
+          <input
+            type="text"
+            id="customer-address"
+            name="customerAddress"
+            autocomplete="street-address"
+            placeholder="Area, estate, landmark or address"
+          >
+          <p class="field-help">
+            If requesting pickup, provide enough location detail for us to
+            discuss availability and fees.
+          </p>
+        </div>
+
+        <div class="form-field">
+          <label for="preferred-date">Preferred date</label>
+          <input type="date" id="preferred-date" name="preferredDate">
+          <p class="field-help">Your preferred date is a request, not a confirmed appointment.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="preferred-time">Preferred time</label>
+          <select id="preferred-time" name="preferredTime">
+            <option value="">No preference</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="special-instructions">Additional details</label>
+          <textarea
+            id="special-instructions"
+            name="specialInstructions"
+            rows="4"
+            placeholder="Tell us about stains, delicate items, access instructions or other requirements."
+          ></textarea>
+        </div>
+
+        <div class="booking-notice">
+          <strong>Please note:</strong> This form prepares a booking request
+          through WhatsApp. Your booking is not confirmed until our team
+          responds and agrees on the service, price, availability and timing.
+        </div>
+
+        <button class="button button-primary booking-submit" type="submit">
+          Send Booking Request on WhatsApp
+        </button>
+
+        <p class="field-help">
+          Your details will be included in a WhatsApp message to Shix Laundry.
+          Review the message before sending it.
+        </p>
+      </form>
+    </section>
+    <!-- END BOOKING REQUEST FORM -->
 
     <section class="section location-section" id="hours">
       <div>
@@ -268,15 +427,17 @@
       <p class="eyebrow">READY WHEN YOU ARE</p>
       <h2>Make room for what matters.</h2>
       <p>
-        Tell us what needs cleaning. We’ll help you understand the
+        Tell us what needs cleaning. We will help you understand the
         available options and next steps.
       </p>
 
       <div class="hero-actions">
-        <a class="button button-light"
-           href="https://wa.me/254706414015"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+          class="button button-light"
+          href="https://wa.me/254706414015"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Chat on WhatsApp
         </a>
 
@@ -288,7 +449,7 @@
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="#home">
+    <a class="brand" href="#home" aria-label="Shix Laundry home">
       <span class="brand-mark">S</span>
       <span>Shix Laundry</span>
     </a>
