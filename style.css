@@ -807,3 +807,123 @@ h3 {
   }
 }
 
+/* BOOKING FORM */
+.booking-section {
+  scroll-margin-top: 100px;
+}
+
+.booking-form {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #dcecf7;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(31, 85, 120, 0.08);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+  min-width: 0;
+}
+
+.form-field > label,
+.form-field legend {
+  font-weight: 600;
+  color: #173c55;
+}
+
+.booking-form input:not([type="checkbox"]),
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbdde9;
+  border-radius: 9px;
+  background: #fbfdff;
+  color: #18384c;
+  font: inherit;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: 2px solid #83c5f0;
+  outline-offset: 2px;
+  border-color: #368cc8;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.service-choices {
+  padding: 18px;
+  border: 1px solid #dcecf7;
+  border-radius: 12px;
+}
+
+.service-choices legend {
+  padding: 0 6px;
+}
+
+.service-choices label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 12px 0;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.service-choices input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: #247db5;
+}
+
+.field-help {
+  margin: 0;
+  color: #617789;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.booking-notice {
+  margin: 8px 0 22px;
+  padding: 16px;
+  border-left: 4px solid #368cc8;
+  border-radius: 8px;
+  background: #eef8ff;
+  color: #24485f;
+  line-height: 1.6;
+}
+
+.booking-submit {
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .booking-form {
+    padding: 18px;
+    border-radius: 13px;
+  }
+
+  .service-choices {
+    padding: 14px;
+  }
+
+  .booking-submit {
+    white-space: normal;
+    text-align: center;
+  }
+}
